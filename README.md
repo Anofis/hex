@@ -1,5 +1,5 @@
 # Jeu Hex
-Jeu hex créé dans le cadre du projet S4.
+Jeu hex créé dans le cadre du projet S4 par Sandra ALFARO Tristan BECHU et Alexis BALAGUER.
 
 ## Compilation
 chmod +x compiler.sh &&
