@@ -10,5 +10,4 @@ export LD_LIBRARY_PATH="InterfaceWithC":$LD_LIBRARY_PATH &&
 ./hex
 
 ## Tests
-cd tests
 make test* && ./test*
