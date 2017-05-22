@@ -20,5 +20,6 @@ export LD_LIBRARY_PATH="InterfaceWithC":$LD_LIBRARY_PATH
 javac *.java
 echo 'Use "export LD_LIBRARY_PATH="InterfaceWithC":$LD_LIBRARY_PATH" before launching the game'
 echo '"./hex for playing'
+chmod +x hex
 exit 0
 
