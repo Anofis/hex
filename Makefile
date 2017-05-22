@@ -14,4 +14,4 @@ clean:
 	rm -rf *.o
 
 maxclean: clean
-	  rm -rf $(EXEC) *.class *.o
+	  rm -rf $(EXEC) *.class *.o *.so

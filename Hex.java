@@ -24,7 +24,7 @@ public class Hex {
 			game.print();
 			game.play();
 		}
-		if(!game.end && !game.surrend){
+		if(!game.end && !game.surrend && !game.relaunch){
 			System.out.print("\033[42m"+"\n\nVictoire du joueur ");
 			if(game.nowPlaying()==1)
 				System.out.println("noir"+"\033[0m");
@@ -36,7 +36,7 @@ public class Hex {
 		if(game.end && !game.surrend && !game.relaunch){
 			System.out.println("\033[32m"+"A bientot !"+"\033[0m");
 		}
-		if(game.end && game.surrend){
+		if(game.end && game.surrend && !game.relaunch){
 			System.out.print("\033[42m"+"\n\nAbandon du joueur ");
 			if(game.nowPlaying()==2)
 				System.out.println("noir"+"\033[0m");
@@ -50,9 +50,10 @@ public class Hex {
 			System.out.println("\nVoici le plateau final : \n");
 			game.grid.print();
 		}
-		if(game.end && game.relaunch && !game.surrend)
+		if(game.end && game.relaunch && !game.surrend){
 			System.out.println("-NOUVELLE PARTIE-");
 			main(null);
+		}
 	}
 
 }
