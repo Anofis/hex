@@ -2,6 +2,7 @@
 Jeu hex créé dans le cadre du projet S4.
 
 ## Compilation
+chmod +x compiler.sh &&
 make
 
 ## Launch
