@@ -18,7 +18,7 @@ gcc -Wall -std=c99 -fPIC -c -I$path/include -I$path/include/linux *.c
 gcc -Wall -std=c99 -fPIC -shared *.o -o libInterfaceWithC.so
 export LD_LIBRARY_PATH="InterfaceWithC":$LD_LIBRARY_PATH
 javac *.java
-#echo 'Use "export LD_LIBRARY_PATH="InterfaceWithC":$LD_LIBRARY_PATH" before launching the following command'
-#echo '"java Hex" for play'
+echo 'Use "export LD_LIBRARY_PATH="InterfaceWithC":$LD_LIBRARY_PATH" before launching the game'
+echo '"./hex for playing'
 exit 0
 
